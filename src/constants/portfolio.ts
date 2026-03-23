@@ -14,7 +14,7 @@ export const SUMMARY = `I am an accomplished Automation Lead Consultant with 8+ 
 Throughout my career, I have led cross-functional teams in implementing test automation strategies aligned with business objectives. My proven track record includes designing enterprise-grade automation frameworks, optimizing test execution, and driving continuous improvement initiatives.`;
 
 export const SKILLS = [
-  { category: 'Test Automation', items: ['UFT/QTP', 'Selenium', 'Cucumber', 'TestNG', 'JUnit'] },
+  { category: 'Test Automation', items: ['UFT/QTP', 'Selenium', 'Playwright', 'Cucumber', 'TestNG', 'JUnit'] },
   { category: 'Languages', items: ['VBScript', 'Java', 'Python', 'JavaScript', 'SQL'] },
   { category: 'Frameworks & Tools', items: ['ALM/QC', 'JIRA', 'Jenkins', 'Maven', 'Git'] },
   { category: 'CI/CD & DevOps', items: ['Jenkins', 'GitLab CI', 'Docker', 'Kubernetes', 'AWS'] },
