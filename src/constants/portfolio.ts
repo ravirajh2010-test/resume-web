@@ -1,21 +1,27 @@
 export const PORTFOLIO_DATA = {
   name: 'Ravi Rajh Jeyaraveendran',
-  title: 'Automation Lead Consultant',
+  title: 'Automation Architect',
   tagline: 'Expert in test automation frameworks, CI/CD integration, and enterprise-scale digital transformation',
   email: 'ravirajh2010@gmail.com',
   phone: '+91 9176869778',
   linkedin: 'https://www.linkedin.com/in/ravirajh',
-  github: 'https://github.com/rajesh-kumar',
+  github: 'https://github.com/ravirajh2010-test/',
   location: 'Chennai, India',
 };
 
-export const SUMMARY = `I am an accomplished Automation Lead Consultant with 8+ years of experience in designing and implementing robust test automation frameworks. My expertise spans UFT (Unified Functional Testing), API testing, CI/CD pipeline integration, and agile methodologies. I specialize in transforming manual testing processes into scalable, maintainable automation solutions that significantly improve product quality and reduce time-to-market.
+export const SUMMARY = `I am an accomplished Automation Architect with over 12 years of experience in designing and implementing robust, scalable test automation frameworks. My core expertise includes UFT (Unified Functional Testing), Playwright, Selenium, API testing, CI/CD integration, and Agile methodologies, with a strong focus on transforming manual testing processes into efficient, maintainable automation solutions that enhance product quality and accelerate time-to-market.
 
-Throughout my career, I have led cross-functional teams in implementing test automation strategies aligned with business objectives. My proven track record includes designing enterprise-grade automation frameworks, optimizing test execution, and driving continuous improvement initiatives.`;
+I completed my Master’s degree in the UK and began my professional journey there, gaining valuable international exposure before moving to India to continue advancing my career in the IT industry. This diverse experience has helped me develop a global perspective and adaptability across different work environments.
+
+Throughout my career, I have successfully led cross-functional teams and driven automation strategies aligned with business goals. I have a proven track record in building enterprise-grade frameworks, optimizing test execution, and delivering continuous improvement initiatives across multiple projects.
+
+Along the way, I have navigated personal challenges that have strengthened my resilience, focus, and commitment. These experiences have shaped my ability to stay consistent, adapt to change, and continue progressing both professionally and personally.
+
+I am passionate about leveraging technology to solve complex testing challenges, mentoring teams, and delivering high-quality solutions that create meaningful impact.`;
 
 export const SKILLS = [
   { category: 'Test Automation', items: ['UFT/QTP', 'Selenium', 'Playwright', 'Cucumber', 'TestNG', 'JUnit'] },
-  { category: 'Languages', items: ['VBScript', 'Java', 'Python', 'JavaScript', 'SQL'] },
+  { category: 'Languages', items: ['VBScript', 'Java', 'Typescript', 'JavaScript', 'SQL'] },
   { category: 'Frameworks & Tools', items: ['ALM/QC', 'JIRA', 'Jenkins', 'Maven', 'Git'] },
   { category: 'CI/CD & DevOps', items: ['Jenkins', 'GitLab CI', 'Docker', 'Kubernetes', 'AWS'] },
   { category: 'Methodologies', items: ['Agile', 'Three Amigos', 'BDD', 'TDD', 'Scrum'] },
@@ -25,15 +31,16 @@ export const SKILLS = [
 export const EXPERIENCE = [
   {
     id: 1,
-    company: 'TechCorp Solutions',
-    role: 'Automation Lead Consultant',
-    duration: 'Jan 2020 - Present',
-    location: 'San Francisco, CA',
+    company: 'Hexaware Technologies',
+    role: 'Technical Architect',
+    duration: 'Jan 2026 - Present',
+    location: 'Chennai, India',
     responsibilities: [
-      'Led a team of 5 QA engineers in designing and implementing a comprehensive UFT-based automation framework for a complex financial application',
+      'Served as the Technical Architect to design and implement a scalable Playwright-based automation framework',
       'Architected CI/CD pipeline using Jenkins, reducing deployment time from 4 hours to 30 minutes',
       'Established testing best practices and mentored team members on code quality standards',
       'Decreased manual testing effort by 70% through intelligent test automation',
+      'Collaborated closely with business and cross-functional teams to define requirements, standardize automation practices, and successfully roll out a reusable, enterprise-wide testing framework'
     ],
     achievements: [
       '78% reduction in regression testing cycles',
@@ -43,12 +50,12 @@ export const EXPERIENCE = [
   },
   {
     id: 2,
-    company: 'InnovateLabs Inc',
+    company: 'Itish Business Solutions - Infosys(Contract)',
     role: 'Senior QA Automation Engineer',
-    duration: 'May 2018 - Dec 2019',
-    location: 'New York, NY',
+    duration: 'Feb 2024 - Oct 2024',
+    location: 'Hyderabad, India',
     responsibilities: [
-      'Designed and developed Selenium-based automation frameworks supporting 5+ applications',
+      'Designed and developed UFT-LeanFT-based automation frameworks supporting 5+ applications',
       'Implemented API testing strategy using REST endpoints and SoapUI',
       'Collaborated with development team in Three Amigos sessions to define acceptance criteria',
       'Established ALM integration for test case management and traceability',
@@ -61,22 +68,41 @@ export const EXPERIENCE = [
   },
   {
     id: 3,
-    company: 'Digital Innovations Ltd',
-    role: 'QA Automation Engineer',
-    duration: 'Aug 2016 - Apr 2018',
-    location: 'Chicago, IL',
+    company: 'Adecco UK - Southwestern Railways(Contract)',
+    role: 'Test Lead',
+    duration: 'Feb 2023 - Apr 2023',
+    location: 'Southampton, UK',
     responsibilities: [
-      'Developed UFT scripts for enterprise application testing',
-      'Maintained and enhanced automated test suites across multiple modules',
-      'Implemented continuous integration with Jenkins for nightly test execution',
-      'Created comprehensive documentation and test automation standards',
+      'Led a team of 5 QA engineers in designing and implementing HR Application - Manual testing',
+      'Coordinated testing activities during short sprint cycles, planning tasks and aligning team efforts within a limited timeline',
+      'Assigned and monitored test case execution, ensuring coverage and adherence to defined quality standards.',
+      'Actively tracked progress, identified risks or blockers, and drove quick resolutions to keep testing on schedule',
     ],
     achievements: [
-      'Built automation framework covering 200+ test scenarios',
-      'Reduced defect escape rate by 40% through comprehensive test coverage',
-      'Improved test execution efficiency by 50% through optimization',
+      'Delivered complete testing within a tight sprint timeline.',
+      'Improved team efficiency through better task coordination',
+      'Ensured smooth execution with minimal blockers',
     ],
   },
+    {
+    id: 4,
+    company: 'Accenture',
+    role: 'Senior Analyst - Test Engineering',
+    duration: 'Mar 2019 - Sept 2020',
+    location: 'Chennai, India',
+    responsibilities: [
+      'Developed and maintained automated test scripts using UFT, converting manual test cases into reliable automation.',
+      'Integrated automated test suites with ALM for efficient test management and traceability.',
+      'Utilized internal Litmus tool for execution and reporting in a banking domain project.',
+      'Automated smoke and regression test suites to ensure faster validation and improved release quality.',
+    ],
+    achievements: [
+      'Increased test coverage by successfully converting manual test cases into automation.',
+      'Reduced testing time through automation of smoke and regression suites.',
+      'Improved traceability and execution efficiency via ALM integration',
+    ],
+  },
+  
 ];
 
 export const PROJECTS = [
@@ -130,4 +156,4 @@ export const PROJECTS = [
   },
 ];
 
-export const GITHUB_USERNAME = 'rajesh-kumar';
+export const GITHUB_USERNAME = 'ravirajh2010-test';

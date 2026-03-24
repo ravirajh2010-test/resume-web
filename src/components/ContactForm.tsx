@@ -16,6 +16,8 @@ const ContactForm: React.FC = () => {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errors, setErrors] = useState<Partial<FormData>>({});
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const validateForm = (): boolean => {
     const newErrors: Partial<FormData> = {};
@@ -62,11 +64,25 @@ const ContactForm: React.FC = () => {
       return;
     }
 
-    // Simulate form submission
+    setIsLoading(true);
+    setSubmitError('');
+
     try {
-      // In a real application, you would send this data to your backend or email service
-      console.log('Form submitted:', formData);
-      
+      const formDataForSubmit = new FormData();
+      formDataForSubmit.append('name', formData.name);
+      formDataForSubmit.append('email', formData.email);
+      formDataForSubmit.append('message', formData.message);
+      formDataForSubmit.append('_captcha', 'false');
+
+      const response = await fetch('https://formsubmit.co/ajax/ravirajh2010@gmail.com', {
+        method: 'POST',
+        body: formDataForSubmit,
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send email');
+      }
+
       // Show success message
       setIsSubmitted(true);
       
@@ -79,6 +95,9 @@ const ContactForm: React.FC = () => {
       }, 5000);
     } catch (error) {
       console.error('Error submitting form:', error);
+      setSubmitError('Failed to send message. Please try again later.');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -165,10 +184,21 @@ const ContactForm: React.FC = () => {
 
       <button
         type="submit"
-        className="btn-primary w-full"
+        disabled={isLoading}
+        className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        Send Message
+        {isLoading ? 'Sending...' : 'Send Message'}
       </button>
+
+      {submitError && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mt-4 p-4 bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-600 text-red-700 dark:text-red-300 rounded-lg text-sm"
+        >
+          {submitError}
+        </motion.div>
+      )}
     </motion.form>
   );
 };

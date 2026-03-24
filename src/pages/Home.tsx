@@ -127,7 +127,7 @@ const Home: React.FC = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">8+</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">11+</div>
               <p className="text-gray-600 dark:text-gray-400">Years of Experience</p>
             </motion.div>
             <motion.div
@@ -136,7 +136,7 @@ const Home: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">50+</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">30+</div>
               <p className="text-gray-600 dark:text-gray-400">Projects Completed</p>
             </motion.div>
             <motion.div
@@ -145,7 +145,7 @@ const Home: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">15+</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">10+</div>
               <p className="text-gray-600 dark:text-gray-400">Team Members Led</p>
             </motion.div>
           </div>

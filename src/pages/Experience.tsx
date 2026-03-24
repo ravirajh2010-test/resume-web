@@ -16,7 +16,7 @@ const Experience: React.FC = () => {
         >
           <h1 className="section-title">Professional Experience</h1>
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            8+ years of expertise in test automation and quality assurance
+            11+ years of expertise in test automation and quality assurance
           </p>
         </motion.div>
 
